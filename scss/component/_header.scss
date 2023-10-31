@@ -23,14 +23,23 @@
     width: 27px;
     z-index: 3;
   }
-  .header__menu {
+
+  .header__menu.active {
+   
     width: 15.125rem;
-    height: 100vh;
+    height: 130vh;
+    
+  }
+  .header__menu {
+    width: 0;
+    height: 0;
     position: absolute;
     right: 0;
     top: 0;
-    background-color: orange;
+    background-color: v.$Almost-White;
     padding-top: 5.625rem;
+    transition: all 300ms ease-in-out;
+    
 
     .header__menu__list {
       width: 242px;
@@ -79,7 +88,7 @@
     .header__login {
       margin-top: 40px;
       padding-inline: 24px;
-      
+
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -88,17 +97,17 @@
       color: v.$Almost-Black;
       font-weight: 400;
 
-      .header__login__link{
-
+      .header__login__link {
       }
 
-      .header__login__link--border{
+      .header__login__link--border {
         border: 1px solid v.$Almost-Black;
-        padding: 15px 20px;
+        padding: 0.9375rem 1.25rem;
         width: 100%;
         text-align: center;
         border-radius: 16px;
         background-color: v.$Almost-White;
+        margin-bottom: 7.75rem;
       }
     }
   }

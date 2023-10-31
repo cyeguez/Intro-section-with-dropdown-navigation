@@ -1,7 +1,8 @@
+@use "../component/main";
 @use "../component/header";
 @use "../base/reset";
 @use "../base/var" as v;
 
 .container{ 
-  background-color:v.$Almost-White;
+  background-color:v.$Medium-Gray;
 }
