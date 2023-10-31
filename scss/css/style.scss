@@ -1,8 +1,10 @@
-@use "../component/main";
-@use "../component/header";
+@forward "../component/header";
+@forward "../component/main";
+@forward "../component/footer";
 @use "../base/reset";
 @use "../base/var" as v;
 
-.container{ 
-  background-color:v.$Medium-Gray;
+.container {
+  background-color: v.$Almost-White;
+
 }

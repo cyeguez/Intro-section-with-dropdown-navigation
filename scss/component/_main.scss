@@ -1,11 +1,41 @@
-.content{
-  .content__hero {
+@use '../base/var' as v;
+.content {
+  &__hero {
+    width: 100%;
+    height: 18.75rem;
+    background-image: url("/assets/images/image-hero-mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .content__title {
+    margin-top: 50px;
+    font-size: 2em;
+    font-weight: 700;
+    color: v.$Almost-Black;
+    text-align: center;
+    margin-bottom: 2rem;
   }
   .content__text {
+    width: 100%;
+    padding-inline: 1rem;
+    text-align:center;
+    color: v.$Medium-Gray;
+    font-size: 1.1em;
+    font-weight: 700;
+   
+    line-height: 1.5em;
   }
   .content__btn-learn-More {
+    width: 137px;
+    height: 48px;
+    margin: 2rem auto;
+    text-align: center;
+    padding: 15px 1rem;
+    background-color: v.$Almost-Black;
+    color: v.$Almost-White;
+    font-weight: 700;
+    font-size: 1em;
+    border-radius: 1rem;
+
   }
-  
 }

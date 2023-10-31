@@ -1,4 +1,12 @@
 .attribution {
+  &__brands {
+    width: 100%;
+    padding-inline: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid red;
+  }
   font-size: 11px;
   text-align: center;
 
