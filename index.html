@@ -1,34 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
-  <link rel="stylesheet" href="./css/style.css">  
+  <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
+  <div class="container">
 
-  Features
-  Company
-  Careers
-  About
+    <div class="header">
+      <div class="header__logo">
+        <img src="./assets/images/logo.svg" alt="logo">
+      </div>
+      <img src="./assets/images/icon-menu.svg" class="header__btn-menu " alt="Menu hamburger">
+      <img src="./assets/images/icon-close-menu.svg" alt="close icon" class="header__btn-close">
 
-  Login
-  Register
+      <div class="header__menu">
+        <ul class="header__menu__list">
+          <li class="header__menu__list__item">
+            <a href="#" class="header__menu__list__link header__menu__list__link--icon "> Features </a>
+            <ul class="header__menu__list__sub-list">
+              <li class="header__menu__list__sub-list__item">
+                <a href="#" class="header__menu__list__sub-list__link"><img src="./assets/images/icon-todo.svg"
+                    alt=""> Todo List</a>
+              </li>
+              <li class="header__menu__list__sub-list__item">
+                <a href="#" class="header__menu__list__sub-list__link"><img src="./assets/images/icon-calendar.svg" alt="Calendar Icon"> Calendar </a>
+              </li>
 
-  Make remote work
+              <li class="header__menu__list__sub-list__item">
+                <a href="#" class="header__menu__list__sub-list__link"><img src="./assets/images/icon-reminders.svg" alt="Remider icon"> Remiders</a>
+              </li>
 
-  Get your team in sync, no matter your location. Streamline processes, 
+              <li class="header__menu__list__sub-list__item">
+                <a href="#" class="header__menu__list__sub-list__link"><img src="./assets/images/icon-planning.svg" alt="Planning icon"> Planning</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="header__menu__list__item">
+            <a href="#" class="header__menu__list__link header__menu__list__link--icon"> Company </a>
+            <ul class="header__menu__list__sub-list">
+              <li class="header__menu__list__sub-list__item">
+                <a href="#" class="header__menu__list__sub-list__link"> History</a>
+              </li>
+
+              <li class="header__menu__list__sub-list__item">
+                <a href="#" class="header__menu__list__sub-list__link"> Our Team</a>
+              </li>
+
+              <li class="header__menu__list__sub-list__item">
+                <a href="#" class="header__menu__list__sub-list__link"> Blog</a>
+              </li>
+            </ul>
+
+          </li>
+
+          <li class="header__menu__list__item">
+            <a href="" class="header__menu__list__link"> Careers</a>
+          </li>
+
+          <li class="header__menu__list__item">
+            <a href="" class="header__menu__list__link">About</a>
+          </li>
+
+
+
+        </ul>
+        <div class="header__login">
+          <a href="" class="header__login__link">Login</a>
+          <a href="" class="header__login__link header__login__link--border">Register</a>
+  
+        </div>
+      </div>
+
+      
+    </div>
+    Make remote work
+
+  Get your team in sync, no matter your location. Streamline processes,
   create team rituals, and watch productivity soar.
 
   Learn more
+
+
+  </div>
+
+
+
+
+
+
+
+
   
   <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="https://github.com/cyeguez" target="_blank"> César Yeguez</a>.
   </footer>
 
   <script src="./js/app.js"></script>
 </body>
+
 </html>
