@@ -1,16 +1,23 @@
+@use '../base/var' as v;
 .attribution {
+  font-size: 11px;
+  text-align: center;
+  color:v.$Medium-Gray;
+
   &__brands {
     width: 100%;
     padding-inline: 1rem;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    border: 1px solid red;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    
+    
   }
-  font-size: 11px;
-  text-align: center;
-
+  
   & a {
-    color: hsl(228, 45%, 44%);
+
+    display: inline;
+    color: v.$Almost-Black;
   }
 }
