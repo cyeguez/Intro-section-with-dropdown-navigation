@@ -121,7 +121,7 @@ svg{
 body {
   min-height  : 100vh;
   font-size   : 100%;
-  font-family : var(--tipo-principal);
+  font-family : v.$fontF;
   color       : var(--negro);
   // /* (Opcional) */ hyphens: auto;
   /* (Opcional) */ font-smooth: always;
