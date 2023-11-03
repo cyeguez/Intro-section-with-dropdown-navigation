@@ -7,6 +7,7 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
+  z-index: 15;
   padding-inline: 1rem;
 }
 .header__logo {
@@ -21,10 +22,14 @@
   z-index: 3;
   display: none;
 }
+.header .rotate {
+  transform: rotate(180deg);
+}
 .header .header__menu.active {
   display: block;
   width: 242px;
   height: 130vh;
+  z-index: 2;
 }
 .header .header__menu {
   width: 0;
@@ -53,33 +58,41 @@
 .header .header__menu .header__menu__list .header__menu__list__item .header__menu__list__link:hover {
   color: hsl(0, 0%, 8%);
 }
-.header .header__menu .header__menu__list .header__menu__list__item .header__menu__list__sub-list {
+.header .header__menu .header__menu__list .header__menu__list__sub-list--list1 {
+  transition: all 3s ease;
+}
+.header .header__menu .header__menu__list .header__menu__list__sub-list--list2 {
+  display: none;
+}
+.header .header__menu .header__menu__list__sub-list {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-block: 1rem;
+  display: none;
 }
-.header .header__menu .header__menu__list .header__menu__list__item .header__menu__list__sub-list__item {
+.header .header__menu .header__menu__list__sub-list__item {
   margin: 1.25rem 1rem;
 }
-.header .header__menu .header__menu__list .header__menu__list__item .header__menu__list__sub-list__item .header__menu__list__sub-list__link {
+.header .header__menu .header__menu__list__sub-list__item .header__menu__list__sub-list__link {
   display: flex;
   align-items: center;
   gap: 1rem;
   color: hsl(0, 0%, 8%);
+  transition: all 3s ease;
 }
-.header .header__menu .header__menu__list .header__menu__list__item .header__menu__list__sub-list__item .header__menu__list__sub-list__link img {
+.header .header__menu .header__menu__list__sub-list__item .header__menu__list__sub-list__link img {
   width: 1.875rem;
 }
 .header .header__menu .header__menu__list__link--icon {
   position: relative;
   transition: all 0.3s;
 }
-.header .header__menu .header__menu__list__link--icon::after {
+.header .header__menu .header__menu__list__link--icon img {
+  width: 12px;
   position: absolute;
-  content: url("../../assets/images/icon-arrow-down.svg");
-  top: 0px;
-  right: 144px;
+  right: 130px;
+  top: 5px;
 }
 .header .header__menu .header__login {
   margin-top: 2.5rem;
@@ -157,6 +170,7 @@
     padding: 1.5rem;
     box-shadow: 4px 9px 20px rgba(0, 0, 0, 0.4);
     transition: all 0.5s ease-in-out;
+    display: none;
   }
   .header .header__menu .header__menu__list .header__menu__list__item .header__menu__list__sub-list__item {
     margin: 0.3125rem 0;
@@ -179,15 +193,22 @@
     width: 153px;
     height: 163px;
     left: -34px;
+    transition: all 0.5s ease-in-out;
   }
   .header .header__menu .header__menu__list .header__menu__list__item .header__menu__list__sub-list--list2 {
     width: 119px;
     height: 132px;
     left: 8.5625rem;
   }
-  .header .header__menu .header__menu__list .header__menu__list__link--icon::after {
-    top: 0;
-    right: -16px;
+  .header .header__menu .header__menu__list__link--icon {
+    position: relative;
+    transition: all 0.3s;
+  }
+  .header .header__menu .header__menu__list__link--icon img {
+    width: 12px;
+    position: absolute;
+    right: -1.5rem;
+    top: 0.4rem;
   }
   .header .header__menu .header__login {
     display: flex;
@@ -275,7 +296,7 @@
     justify-content: left;
   }
   .content .content__container__title {
-    width: 75%;
+    width: 85%;
     height: 7.9375rem;
     font-size: 4.063em;
     text-align: left;
