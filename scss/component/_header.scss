@@ -123,6 +123,7 @@
 
       .header__login__link {
         color: v.$Medium-Gray;
+        
         &:hover {
           color: v.$Almost-Black;
         }
@@ -136,6 +137,7 @@
         border-radius: 1rem;
         background-color: v.$Almost-White;
         margin-bottom: 124px;
+        transition: background-color 0.5s;
 
         &:hover {
           background-color: v.$Almost-Black;
