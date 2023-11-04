@@ -40,8 +40,7 @@ function showList(nameArrow, nameList,event ) {
    
     nameArrow.classList.remove('rotate'); 
     nameList.style.display = 'none';    
-    
-    
+        
   }else{    
     nameArrow.classList.add('rotate'); 
     nameList.style.display = 'flex';
